@@ -3,6 +3,7 @@
 #include <time.h>
 
 static FILE *logFile = NULL;
+static const char* GetCurrentTimestamp();
 // 初始化日志模块
 void Init_Logger(const char *logFilePath)
 {

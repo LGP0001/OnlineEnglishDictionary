@@ -1,7 +1,8 @@
 CC = gcc
 CFLAGS = -Wall -g
 
-OBJS = main.o \
+OBJS = client.o \
+       server.o \
        concurrent/concurrent.o \
        user_management/user_register.o user_management/user_login.o user_management/user_auth.o \
        dictionary_query/word_search.o \
