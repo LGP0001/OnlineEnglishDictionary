@@ -103,6 +103,7 @@ void test_Invalid_SQL_Command()
     Close_Database(db);
     LogInfo("测试3: 无效的SQL命令测试成功!");
 }
+
 int main() 
 {
 //  test_Init_Address();// 
@@ -110,6 +111,6 @@ int main()
     test_Valid_SQL_Command();  
     test_Invalid_SQL_Command();  
 
-    LogInfo("所有数据库函数的测试均已通过!");
+    LogInfo("所有函数的测试均已通过!");
     return 0;
 }

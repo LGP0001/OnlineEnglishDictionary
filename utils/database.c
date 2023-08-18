@@ -1,6 +1,6 @@
 #include "../utils/utils.h"
+#include "../utils/database.h"
 #include "../logs/logs.h"
-#include <sqlite3.h>
 
 // 初始化数据库连接
 sqlite3* Init_Database(const char* path)
