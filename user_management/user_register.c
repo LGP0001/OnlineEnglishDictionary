@@ -1,5 +1,5 @@
 #include "../utils/database.h"
-#include "../dictionary_query/user_management.h"
+#include "../user_management/user_management.h"
 #include "../logs/logs.h"
 
 sqlite3* db;

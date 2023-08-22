@@ -1,8 +1,8 @@
 #include <assert.h>
 #include "../utils/database.h"
 #include "../logs/logs.h"
-#include "../dictionary_query/user_register.c"
-#include "../dictionary_query/user_login.c"
+#include "../user_management/user_register.c"
+#include "../user_management/user_login.c"
 
 
 int main(int argc, const char *argv[]) 
