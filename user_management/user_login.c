@@ -3,7 +3,7 @@
 #include "../logs/logs.h"
 
 bool is_authenticated = false;
-sqlite3 *db;
+extern sqlite3 *db;
 
 int login_callback(void* data, int argc, char** argv, char** azColName)
 {

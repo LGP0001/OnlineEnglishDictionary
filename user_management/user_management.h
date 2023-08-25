@@ -12,6 +12,8 @@ typedef struct {
     char role[10]; // "admin" 或 "user"
 } User;
 
+// 初始化用户表
+void setup_user_database();
 // 用户注册功能
 bool register_user(User *user);
 

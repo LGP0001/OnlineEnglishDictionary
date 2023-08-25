@@ -22,7 +22,6 @@ word: 要查找的单词。
 
 如果找到了单词，返回该单词的释义。
 如果没有找到单词，返回 NULL*/ 
-
+const char* search_word(const char *word);
 
 #endif
-

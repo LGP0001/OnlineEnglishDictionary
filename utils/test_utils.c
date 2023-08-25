@@ -106,7 +106,7 @@ void test_Invalid_SQL_Command()
 
 int main() 
 {
-//  test_Init_Address();// 
+    test_Init_Address();// 
     test_Init_and_Close_Database();  
     test_Valid_SQL_Command();  
     test_Invalid_SQL_Command();  

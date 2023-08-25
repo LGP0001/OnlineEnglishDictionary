@@ -1,4 +1,5 @@
 #include "utils.h"
+#include "../logs/logs.h"
 
 /*初始化网络*/
 int Init_Address(const char *ip, const char *port, bool server)
@@ -82,4 +83,31 @@ int Init_Address(const char *ip, const char *port, bool server)
     }
 
     return sockfd;
+}
+
+bool load_config(const char *config_path, char *server_ip, char *server_port) 
+{
+    FILE *file = fopen(config_path, "r");
+    if (file == NULL) 
+        return false;
+
+    char line[256];
+    while (fgets(line, sizeof(line), file)) 
+    {
+        if (strncmp(line, "SERVER_IP=", 10) == 0) 
+        {
+            strcpy(server_ip, line + 10);
+            // remove newline if present
+            server_ip[strcspn(server_ip, "\n")] = 0;
+        } 
+        else if (strncmp(line, "SERVER_PORT=", 12) == 0) 
+        {
+            strcpy(server_port, line + 12);
+            // remove newline if present
+            server_port[strcspn(server_port, "\n")] = 0;
+        }
+    }
+
+    fclose(file);
+    return true;
 }

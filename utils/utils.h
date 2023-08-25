@@ -21,4 +21,7 @@
 typedef struct sockaddr_in Addr_in;
 typedef struct sockaddl Addr;
 
+int Init_Address(const char *ip, const char *port, bool server);
+bool load_config(const char *config_path, char *server_ip, char *server_port) ;
+
 #endif

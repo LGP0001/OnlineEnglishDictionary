@@ -11,7 +11,7 @@ sqlite3* Init_Database(const char* path)
     if(rc)
     {
         char error_msg[512];
-        snprintf(error_msg, sizeof(error_msg), "无法打开数据库. 错误原因: %s", strerror(errno));
+        snprintf(error_msg, sizeof(error_msg), "无法打开数据库. 错误原因: %s", sqlite3_errmsg(db));
         LogError(error_msg);
         return NULL;
     }

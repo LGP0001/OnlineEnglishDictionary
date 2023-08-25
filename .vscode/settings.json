@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "dictionary_query.h": "c",
+        "common_structs.h": "c",
+        "stdio.h": "c",
+        "stdbool.h": "c",
+        "logs.h": "c",
+        "concurrent.h": "c",
+        "stdlib.h": "c",
+        "user_management.h": "c",
+        "pthread.h": "c",
+        "server_handler.h": "c"
+    }
+}

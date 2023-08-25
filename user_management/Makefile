@@ -9,7 +9,7 @@ SQLITE_LIB = -lsqlite3
 TARGET = test_dictionary_query
 
 $(TARGET): $(SRCS)
-	$(CC) $(INC_DIRS) -o $@ $^ $(SQLITE_LIB)
+	$(CC) $(INC_DIRS) -g -o $@ $^ $(SQLITE_LIB)
 
 clean:
 	rm -f $(TARGET)

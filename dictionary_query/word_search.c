@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include "../logs/logs.h"
 
-#define MAX_ENTRIES 10000 // 假设词典最多有10000个词条
+#define MAX_ENTRIES 20000 // 假设词典最多有20000个词条
 
 Response dictionary[MAX_ENTRIES];
 int total_entries = 0;

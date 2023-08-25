@@ -2,10 +2,10 @@
 #include "../user_management/user_management.h"
 #include "../logs/logs.h"
 
-sqlite3* db;
+sqlite3* db = NULL;
 void setup_user_database()
 {
-    db = Init_Database("../dictionary_query/users.db");
+    db = Init_Database("../OnlineEnglishDictionary/test.db");
     // 创建users表格；
     const char* create_table_sql = "CREATE TABLE IF NOT EXISTS users (username TEXT PRIMARY KEY, password TEXT, role TEXT DEFAULT 'user');";    
     Execute_SQL(db, create_table_sql, NULL, NULL);
